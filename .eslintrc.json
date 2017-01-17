@@ -13,7 +13,7 @@
     "phantomjs": true
   },
   "rules": {
-    "indent": [2, "tab"],
+    "indent": 0,
     "quotes": [2, "single"],
     "comma-dangle": [2, {
       "arrays": "never",
