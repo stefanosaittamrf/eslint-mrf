@@ -73,13 +73,6 @@
         "yoda": "error",
         "curly": "error",
         "no-loop-func": "error",
-        "no-magic-numbers": [
-            "warn",
-            {
-                "ignoreArrayIndexes": true,
-                "detectObjects": true
-            }
-        ],
         "no-delete-var": "error",
         "no-undef": "error",
         "max-len": [
