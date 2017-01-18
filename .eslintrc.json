@@ -114,7 +114,7 @@
         "object-shorthand": "error",
         "prefer-spread": "error",
         "sort-imports": [
-            "error",
+            "warn",
             {
                 "ignoreCase": true
             }
