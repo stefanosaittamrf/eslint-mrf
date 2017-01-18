@@ -1,105 +1,135 @@
 {
-  "extends": "google",
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
-  },
-  "env": {
-    "browser": true,
-    "node": true,
-    "es6": true,
-    "amd": true,
-    "jasmine": true,
-    "phantomjs": true
-  },
-  "rules": {
-    "indent": 0,
-    "quotes": [2, "single"],
-    "comma-dangle": [2, {
-      "arrays": "never",
-      "objects": "always"
-    }],
-    "no-console": 1,
-    "no-debugger": 2,
-    "no-constant-condition": 2,
-    "no-control-regex": 2,
-    "no-dupe-args": 2,
-    "no-dupe-keys": 2,
-    "no-duplicate-case": 2,
-    "no-empty-character-class": 2,
-    "no-empty": [2, {
-      "allowEmptyCatch": true
-    }],
-    "no-ex-assign": 2,
-    "no-extra-boolean-cast": 2,
-    "no-extra-parens": 2,
-    "no-extra-semi": 2,
-    "no-invalid-regexp": 2,
-    "no-irregular-whitespace": 2,
-    "no-inner-declarations": 2,
-    "class-methods-use-this": 2,
-    "no-regex-spaces": 2,
-    "no-template-curly-in-string": 2,
-    "no-unreachable": 2,
-    "use-isnan": 2,
-    "valid-typeof": 2,
-    "eqeqeq": 2,
-    "no-alert": 2,
-    "no-case-declarations": 2,
-    "no-else-return": 2,
-    "no-empty-pattern": 2,
-    "no-extend-native": 1,
-    "no-floating-decimal": 2,
-    "no-octal": 2,
-    "no-param-reassign": 2,
-    "no-redeclare": 2,
-    "no-return-assign": 2,
-    "no-self-assign": 2,
-    "no-useless-call": 2,
-    "no-useless-concat": 2,
-    "no-useless-escape": 2,
-    "radix": 2,
-    "wrap-iife": 2,
-    "yoda": 2,
-    "curly": 2,
-    "no-loop-func": 2,
-    "no-magic-numbers": [1, {
-      "ignoreArrayIndexes" : true,
-      "detectObjects" : true
-    }],
-    "no-delete-var": 2,
-    "no-undef": 2,
-    "max-len": [1,
-      { "code": 120,
-        "tabWidth": 2,
-        "ignoreComments": true,
-        "ignoreTemplateLiterals": true,
-        "ignoreUrls": true
-      }
-    ],
-    "max-depth":[1, {
-      "max": 3
-    }],
-    "new-cap": [2, {
-      "properties": false
-    }],
-    "new-parens": 2,
-    "no-nested-ternary": 2,
-    "no-plusplus": 1,
-    "object-curly-spacing": [2, "always"],
-    "no-whitespace-before-property": 2,
-    "no-class-assign": 2,
-    "no-const-assign": 2,
-    "arrow-parens": [2, "as-needed"],
-    "object-shorthand": 2,
-    "prefer-spread": 2,
-    "sort-imports": 2,
-    "no-dupe-class-members": 2,
-    "prefer-const": [2, {
-      "destructuring": "any",
-      "ignoreReadBeforeAssign": false
-    }],
-    "prefer-template": 2,
-    "template-curly-spacing": 2
-  }
+    "extends": "google",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "amd": true,
+        "jasmine": true,
+        "phantomjs": true,
+        "commonjs": true
+    },
+    "rules": {
+        "indent": "off",
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "never",
+                "objects": "always"
+            }
+        ],
+        "no-console": "warn",
+        "no-debugger": "error",
+        "no-constant-condition": "error",
+        "no-control-regex": "error",
+        "no-dupe-args": "error",
+        "no-dupe-keys": "error",
+        "no-duplicate-case": "error",
+        "no-empty-character-class": "error",
+        "no-empty": [
+            "error",
+            {
+                "allowEmptyCatch": true
+            }
+        ],
+        "no-ex-assign": "error",
+        "no-extra-boolean-cast": "error",
+        "no-extra-parens": "error",
+        "no-extra-semi": "error",
+        "no-invalid-regexp": "error",
+        "no-irregular-whitespace": "error",
+        "no-inner-declarations": "error",
+        "class-methods-use-this": "error",
+        "no-regex-spaces": "error",
+        "no-template-curly-in-string": "error",
+        "no-unreachable": "error",
+        "use-isnan": "error",
+        "valid-typeof": "error",
+        "eqeqeq": "error",
+        "no-alert": "error",
+        "no-case-declarations": "error",
+        "no-else-return": "error",
+        "no-empty-pattern": "error",
+        "no-extend-native": "warn",
+        "no-floating-decimal": "error",
+        "no-octal": "error",
+        "no-param-reassign": "error",
+        "no-redeclare": "error",
+        "no-return-assign": "error",
+        "no-self-assign": "error",
+        "no-useless-call": "error",
+        "no-useless-concat": "error",
+        "no-useless-escape": "error",
+        "radix": "error",
+        "wrap-iife": "error",
+        "yoda": "error",
+        "curly": "error",
+        "no-loop-func": "error",
+        "no-magic-numbers": [
+            "warn",
+            {
+                "ignoreArrayIndexes": true,
+                "detectObjects": true
+            }
+        ],
+        "no-delete-var": "error",
+        "no-undef": "error",
+        "max-len": [
+            "warn",
+            {
+                "code": 120,
+                "tabWidth": 2,
+                "ignoreComments": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreUrls": true
+            }
+        ],
+        "max-depth": [
+            "warn",
+            {
+                "max": 3
+            }
+        ],
+        "new-cap": [
+            "error",
+            {
+                "properties": false
+            }
+        ],
+        "new-parens": "error",
+        "no-nested-ternary": "error",
+        "no-plusplus": "warn",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "no-whitespace-before-property": "error",
+        "no-class-assign": "error",
+        "no-const-assign": "error",
+        "arrow-parens": [
+            "error",
+            "as-needed"
+        ],
+        "object-shorthand": "error",
+        "prefer-spread": "error",
+        "sort-imports": "error",
+        "no-dupe-class-members": "error",
+        "prefer-const": [
+            "error",
+            {
+                "destructuring": "any",
+                "ignoreReadBeforeAssign": false
+            }
+        ],
+        "prefer-template": "error",
+        "template-curly-spacing": "error"
+    }
 }
