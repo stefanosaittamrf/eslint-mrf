@@ -14,21 +14,9 @@ module.exports = {
         "commonjs": true
     },
     "rules": {
-        "indent": "off",
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "comma-dangle": [
-            "error",
-            {
-                "arrays": "never",
-                "objects": "always"
-            }
-        ],
-        "no-console": "warn",
+        //Possible Errors
+        "no-console": "error",
         "no-debugger": "error",
-        "require-jsdoc": "off",
         "no-constant-condition": "error",
         "no-control-regex": "error",
         "no-dupe-args": "error",
@@ -45,15 +33,18 @@ module.exports = {
         "no-extra-boolean-cast": "error",
         "no-extra-parens": "error",
         "no-extra-semi": "error",
+        "no-inner-declarations": "error",
         "no-invalid-regexp": "error",
         "no-irregular-whitespace": "error",
-        "no-inner-declarations": "error",
-        "class-methods-use-this": "error",
         "no-regex-spaces": "error",
         "no-template-curly-in-string": "error",
         "no-unreachable": "error",
         "use-isnan": "error",
         "valid-typeof": "error",
+
+        //Best Practices
+        "curly": "error",
+        "class-methods-use-this": "error",
         "eqeqeq": "error",
         "no-alert": "error",
         "no-case-declarations": "error",
@@ -61,6 +52,7 @@ module.exports = {
         "no-empty-pattern": "error",
         "no-extend-native": "warn",
         "no-floating-decimal": "error",
+        "no-loop-func": "error",
         "no-octal": "error",
         "no-param-reassign": "error",
         "no-redeclare": "error",
@@ -72,10 +64,30 @@ module.exports = {
         "radix": "error",
         "wrap-iife": "error",
         "yoda": "error",
-        "curly": "error",
-        "no-loop-func": "error",
+
+        //Variables
         "no-delete-var": "error",
         "no-undef": "error",
+
+        //Stylistic Issues
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "never",
+                "objects": "always"
+            }
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "indent": "off",
+        "max-depth": [
+            "warn",
+            {
+                "max": 3
+            }
+        ],
         "max-len": [
             "warn",
             {
@@ -86,18 +98,13 @@ module.exports = {
                 "ignoreUrls": true
             }
         ],
-        "max-depth": [
-            "warn",
-            {
-                "max": 3
-            }
-        ],
         "new-cap": [
             "error",
             {
                 "properties": false
             }
         ],
+        "require-jsdoc": "off",
         "new-parens": "error",
         "no-nested-ternary": "error",
         "no-plusplus": "warn",
@@ -106,6 +113,8 @@ module.exports = {
             "always"
         ],
         "no-whitespace-before-property": "error",
+
+        //ECMAScript 6
         "no-class-assign": "error",
         "no-const-assign": "error",
         "arrow-parens": [
